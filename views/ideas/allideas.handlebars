@@ -1,0 +1,20 @@
+{{#each depots }}
+<div class="card" style="width: 18rem;">
+  <img src="{{image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <img src="" alt="image">
+    <p class="card-text" value="{{depot.title}}">{{title}}</p>
+    <p class="card-text" value="{{depot.price}}">{{price}}</p>
+    <p class="card-text" value="{{depot.cut}}">{{cut}}</p>
+    <p class="card-text" value="{{depot.description}}">{{description}}</p>
+    <a class="btn btn-dark btn-block" href="/ideas/edit/{{id}}"></a>
+    <form method="" action="/ideas/{{id}}?_method=DELETE">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" class="btn btn-danger btn-block" value="Delete">
+    </form>
+
+  </div>
+</div>
+{{else}}
+<p>Pas d''article ajouté</p>
+{{/each}}

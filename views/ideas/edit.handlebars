@@ -1,0 +1,30 @@
+{{#each depot }}
+<div class="card card-body">
+    <h3>Editer un article</h3>
+    <form action="/ideas/{{depot.id}}?_method=PUT" methode="post">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" value="{{depot.title}}" name="title" /> 
+    </div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" value="{{depot.title}}" name="title" /> 
+    </div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" value="{{depot.title}}" name="title" /> 
+    </div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" value="{{depot.title}}" name="title" /> 
+    </div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" value="{{depot.title}}" name="title" /> 
+    </div>
+    </form>
+
+</div>
+{{else}}
+<p>Pas d''article ajouté</p>
+{{/each}}
